@@ -1,0 +1,28 @@
+# Database connection configuration
+connection:
+  driver: "IBM i Access ODBC Driver 64-bit"  # Example driver name (adjust for your DB)
+  system: "192.168.0.40"               # Database server/host, PROD 192.168.0.40
+  port: "23"                            # Database port
+  uid: "ITDKLSUSER"                    # Database username
+  pwd: "ITDKLSUSER"                    # Database password
+  database: "MMSMTSML"          # Database name prod MMSMRLIB, test MMSMTSML
+  schema: "MMSMTSML" 
+
+# General configuration
+exports_dir: "/DataFoundation/MMS/SMR/Raw/Extracts"   # Base folder for exports
+logs_dir: "/DataFoundation/MMS/SMR/Raw/Logs"        # Base folder for logs
+log_file: "export.log"   # Base log file name (date will be appended automatically)
+
+queries_dir: "/DataFoundation/MMS/SMR/Raw/Queries" 
+
+# Notification settings
+notifications:
+  slack_webhook: "https://hooks.slack.com/services/..."  # Slack webhook URL
+
+  email:
+    enabled: true                         # Whether to send email notifications
+    sender: "sender@example.com"
+    receiver: "receiver@example.com"
+    smtp_server: "smtp.example.com"
+    port: 587
+    username: "smtp_username"

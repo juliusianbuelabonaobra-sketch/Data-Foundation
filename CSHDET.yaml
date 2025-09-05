@@ -1,0 +1,15 @@
+name: CSHDET
+query: "SELECT * FROM MMSMTSML.CSHDET"
+output: CSHDET
+format: parquet
+compression: snappy
+timestamp: false
+max_file_size_mb: 1024  
+  #parallelize: true
+  #partition_column: CSDATE
+  #partition_days: 30
+  #max_workers: 4
+  #merge_parts: true
+  #batch_size: 500000
+  #row_group_size: 1000000
+  #decimal_mode: string

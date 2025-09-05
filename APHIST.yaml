@@ -1,0 +1,6 @@
+name: "APHIST"               # Descriptive name of the query
+query: "SELECT * FROM MMSMTSML.APHIST"   # SQL query, database comes from config.yaml
+output: "APHIST"             # Base filename for the export (without extension)
+format: "parquet"            # Output format (csv, parquet, xlsx)
+compression: "snappy"          # Compression type (gzip, snappy, etc.)
+timestamp: false             # Whether to append timestamp to filename
