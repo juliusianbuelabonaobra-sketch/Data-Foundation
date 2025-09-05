@@ -1,12 +1,12 @@
 # Database connection configuration
 connection:
   driver: "IBM i Access ODBC Driver 64-bit"  # Example driver name (adjust for your DB)
-  system: "192.168.0.40"               # Database server/host, PROD 192.168.0.40
+  system: ""               # Database server/host, PROD 192.168.0.40
   port: "23"                            # Database port
-  uid: "ITDKLSUSER"                    # Database username
-  pwd: "ITDKLSUSER"                    # Database password
-  database: "MMSMTSML"          # Database name prod MMSMRLIB, test MMSMTSML
-  schema: "MMSMTSML" 
+  uid: ""                    # Database username
+  pwd: ""                    # Database password
+  database: ""          # Database name prod MMSMRLIB, test MMSMTSML
+  schema: "" 
 
 # General configuration
 exports_dir: "/DataFoundation/MMS/SMR/Raw/Extracts"   # Base folder for exports
